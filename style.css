@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(45, 45, 45);
+    font-family: sans-serif;
+    color: white;
+}
+
+.hero {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.948) 0%, rgba(0, 0, 0, 0.56) 100%),
+        url('./Images/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    min-height: 43rem;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.header__buttons-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: .03px solid rgb(228, 228, 228);
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.header__buttons-select::after,
+.header__buttons-select:focus,
+.header__buttons-select:focus-within {
+    outline: 2px solid #fff;
+}
+
+select {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.948);
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select option {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.header__buttons-signin {
+    border: none;
+    outline: none;
+    background-color: rgb(229, 9, 20);
+    border-radius: 4px;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.hero__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px 32px;
+    gap: 16px;
+}
+
+.hero__text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 7.5rem;
+}
+
+.hero__text>p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero__form>p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hero__form form {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+form input {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    background-color: rgba(45, 45, 45, 0.743);
+    padding: 12px 30px 12px 12px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+form input::placeholder {
+    color: rgb(179, 179, 179);
+    font-size: 22px;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: rgb(229, 9, 20);
+    padding: 14px;
+}
+
+form button:hover {
+    background: rgb(193, 17, 25);
+}
+
+.seprator {
+    height: 12px;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    outline: none;
+}
+
+
+/* section tv */
+.tv,
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem 32px;
+    gap: 20px;
+    background-color: black;
+}
+
+.tv__text {
+    max-width: 50%;
+}
+
+.tv__text h2,
+.heading {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.tv__text p,
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.tv__media {
+    flex: 1;
+    position: relative;
+}
+
+.tv__media img {
+    width: 100%;
+    position: relative;
+    z-index: 12;
+    overflow: hidden;
+}
+
+.tv__media video {
+    width: 86%;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+
+
+/* section downloads  */
+.download__media {
+    flex: 1;
+    position: relative;
+}
+
+.download__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: black;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 4rem;
+    position: absolute;
+    top: 53%;
+    right: 9%;
+    z-index: 4;
+
+    div {
+        p {
+            font-size: 1rem;
+        }
+
+        .link {
+            color: #0071eb;
+            font-size: 0.875rem;
+        }
+    }
+
+    .icon {
+        margin-left: 5rem;
+    }
+}
+
+
+.download__text {
+    flex: 1;
+}
+
+/* watch text */
+
+
+.watch__media {
+    position: relative;
+
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 12;
+    }
+
+    video {
+        width: 63%;
+        position: absolute;
+        top: 10%;
+        left: 18%;
+    }
+}
+
+/* profile section  */
+
+.profile__media {
+    flex: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.profile__text {
+    flex: 50%;
+}
+
+.faq {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.questions {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+details {
+    width: 100%;
+
+    summary ,p {
+        background-color: rgba(45, 45, 45, 0.743);
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        transition: all .3s ease;
+    }
+   
+    p{
+        cursor: none;
+    }
+   
+}
+
+summary:hover{
+    background-color: rgb(65,65,65);
+}
+
+/* footer  */
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3.5rem 32px;
+    gap: 20px;
+    background-color: black;
+}
+
+.footer__number, .footer__number a{
+    font-size:16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer__links div{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+}
+
+.footer__links>div>a{
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top:16px;
+    text-align :left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__text>p{
+    text-align :left;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+    }
+
+    nav {
+        padding: 12px 16px;
+    }
+
+    .header__buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .header__buttons-select,
+    select {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .header__buttons-signin {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .hero__text h1 {
+        font-size: 36px;
+        padding-top: 4rem;
+    }
+
+    .hero__text>p,
+    .hero__form>p {
+        font-size: 18px;
+    }
+
+    .hero__form form {
+        flex-direction: column;
+    }
+
+    form input {
+        font-size: 18px;
+        padding: 10px 20px 10px 10px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .tv__text h2,
+    .heading,
+    .tv__text p,
+    .description {
+        font-size: 2rem;
+    }
+
+    .download__card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        margin: 2rem;
+        right: auto;
+    }
+
+    .download__card div p,
+    .download__card div .link {
+        font-size: 14px;
+    }
+
+    .download__text,
+    .tv__media,
+    .watch__media,
+    .profile__media,
+    .footer,
+    .faq {
+        padding: 2rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+}
